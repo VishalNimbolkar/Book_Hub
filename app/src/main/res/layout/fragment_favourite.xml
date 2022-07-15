@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FavouriteFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/RecyclerFavourite"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/recycler_favorite_single_row"
+       android:layout_marginTop="2dp"/>
+
+   <RelativeLayout
+       android:id="@+id/progressLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:background="#ffffff">
+
+      <ProgressBar
+          android:id="@+id/progressBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_centerInParent="true"/>
+   </RelativeLayout>
+
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/llContent"
+       android:layout_width="match_parent"
+       android:layout_height="140dp"
+       android:orientation="horizontal"
+       android:background="#ffffff"
+       android:weightSum="6">
+
+      <ImageView
+          android:id="@+id/imgBookImage"
+          android:layout_height="110dp"
+          android:layout_weight="1.5"
+          android:layout_width="0dp"
+          android:padding="5dp"
+          android:src="@drawable/lord_of_rings" />
+
+      <RelativeLayout
+          android:layout_height="match_parent"
+          android:layout_width="0dp"
+          android:layout_weight="3.3">
+
+         <TextView
+             android:id="@+id/txtBookName"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             android:text="The Lord of the Rings"
+             android:textColor="@color/black"
+             android:textSize="18sp"
+             android:textStyle="bold"/>
+
+         <TextView
+             android:id="@+id/txtBookAuthor"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="J.R.R Tolkien"
+             android:layout_below="@id/txtBookName"
+             android:textSize="16sp"
+             android:textColor="@color/black"
+             android:padding="8dp"
+             android:textStyle="bold"/>
+
+         <TextView
+             android:id="@+id/txtBookPrice"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Rs 499"
+             android:layout_below="@id/txtBookAuthor"
+             android:textSize="15sp"
+             android:padding="8dp"
+             android:textStyle="bold"
+             android:textColor="@color/black"
+             android:layout_alignParentBottom="true" />
+
+      </RelativeLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
+

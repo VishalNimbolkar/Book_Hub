@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContent"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:weightSum="6">
+
+    <ImageView
+        android:id="@+id/imgBookImage"
+        android:layout_height="110dp"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3.3">
+
+        <TextView
+            android:id="@+id/txtBookName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:text="Name Of The Book"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            android:layout_below="@id/txtBookName"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtBookPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs 299"
+            android:layout_below="@id/txtBookAuthor"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtBookRating"
+        android:layout_weight="1.2"
+        android:layout_width="0dp"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_rating"
+        android:textColor="#ffca28"
+        android:text="4.5"
+        android:drawablePadding="4dp"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</LinearLayout>
+
+
+
